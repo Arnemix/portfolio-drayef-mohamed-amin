@@ -1,5 +1,6 @@
-import './App.scss';
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import "./App.scss";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import CV from "./components/cv/CV";
 
 const AppLayout = () => {
     return (
@@ -12,7 +13,7 @@ const AppLayout = () => {
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: "/",
         element: (
             <AppLayout>
                 <Outlet />
@@ -23,6 +24,8 @@ const router = createBrowserRouter([
                 // Code d'exemple
                 // path: '/',
                 // element: <div>Home</div>,
+                path: "/cv",
+                element: <CV />,
             },
         ],
     },

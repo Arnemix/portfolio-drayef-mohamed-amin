@@ -1,0 +1,87 @@
+{
+    "cv-personnal-info": {
+        "firstName": "Drayef",
+        "lastName": "Mohamed Amin",
+        "jobTitle": "Développeur",
+        "location": "Rue Ernest Vander aa 6, 1020 Bruxelles",
+        "land": "Belgique",
+        "dateOfBirth": "02/03/2001",
+        "phoneNumber": "0493 43 06 82",
+        "email": "amindrayef@gmail.com",
+        "website": "https://amindrayef.com"
+    },
+    "cv-skill": [
+        {
+            "id": 1,
+            "name": "Java",
+            "level": 75,
+            "startLearningYear": 2017,
+            "learnedFrameworks": [
+                "Spring",
+                "Spring Boot"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "JavaScript",
+            "level": 60,
+            "startLearningYear": 2020,
+            "learnedFrameworks": [
+                "React",
+                "Angular"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Python",
+            "level": 20,
+            "startLearningYear": 2021,
+            "learnedFrameworks": []
+        },
+        {
+            "id": 4,
+            "name": "HTML",
+            "level": 95,
+            "startLearningYear": 2018,
+            "learnedFrameworks": []
+        },
+        {
+            "id": 5,
+            "name": "CSS",
+            "level": 75,
+            "startLearningYear": 2018,
+            "learnedFrameworks": [
+                "Bootstrap",
+                "Sass"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "SQL",
+            "level": 50,
+            "startLearningYear": 2018,
+            "learnedFrameworks": [
+                "MySQL",
+                "Json",
+                "MongoDB"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Git",
+            "level": 60,
+            "startLearningYear": 2018,
+            "learnedFrameworks": [
+                "GitHub",
+                "GitLab"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Bash",
+            "level": 40,
+            "startLearningYear": 2018,
+            "learnedFrameworks": []
+        }
+    ]
+}

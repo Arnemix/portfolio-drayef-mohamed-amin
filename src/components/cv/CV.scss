@@ -1,0 +1,17 @@
+.cv-container {
+    display: flex;
+    width: 100%;
+    .cv-sidebar {
+        background-color: rgb(218, 238, 233);
+        width: 40%;
+    }
+}
+
+.progress-container {
+    width: 80%;
+    background-color: #ddd;
+    .progress {
+        height: 20px;
+        background-color: #04aa6d;
+    }
+}
