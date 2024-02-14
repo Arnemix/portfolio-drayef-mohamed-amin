@@ -2,6 +2,8 @@
     display: flex;
     width: 100%;
     .cv-sidebar {
+        padding-left: 40px;
+        padding-top: 40px;
         background-color: rgb(218, 238, 233);
         width: 40%;
     }
@@ -11,7 +13,12 @@
     width: 80%;
     background-color: #ddd;
     .progress {
-        height: 20px;
+        height: 10px;
         background-color: #04aa6d;
     }
+}
+
+.cv-main {
+    width: 60%;
+    padding: 40px;
 }

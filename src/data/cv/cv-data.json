@@ -8,7 +8,8 @@
         "dateOfBirth": "02/03/2001",
         "phoneNumber": "0493 43 06 82",
         "email": "amindrayef@gmail.com",
-        "website": "https://amindrayef.com"
+        "website": "https://amindrayef.com",
+        "description": "Avec de solides compétences dans les domaines de la logistique et du développement informatique, je suis actuellement à la recherche d'un poste de collaborateur après avoir obtenu mon CESS. Je suis une personne méthodique et organisée, et j'apprécie particulièrement le travail en équipe. Même sous pression et contrainte de temps, je suis capable de maintenir mon efficacité. J'ai également suivi une formation de développeur fullstack chez MolenGeek, ce qui m'a permis d'acquérir une expertise approfondie dans le développement web et mobile, ainsi que dans la création d'applications innovantes."
     },
     "cv-skill": [
         {
@@ -17,8 +18,7 @@
             "level": 75,
             "startLearningYear": 2017,
             "learnedFrameworks": [
-                "Spring",
-                "Spring Boot"
+                "Spring"
             ]
         },
         {
@@ -82,6 +82,126 @@
             "level": 40,
             "startLearningYear": 2018,
             "learnedFrameworks": []
+        }
+    ],
+    "cv-language": [
+        {
+            "id": 1,
+            "name": "Français",
+            "level": 100,
+            "startLearningYear": 2001
+        },
+        {
+            "id": 2,
+            "name": "Anglais",
+            "level": 60,
+            "startLearningYear": 2018
+        },
+        {
+            "id": 3,
+            "name": "Néerlandais",
+            "level": 40,
+            "startLearningYear": 2018
+        },
+        {
+            "id": 4,
+            "name": "Arabe",
+            "level": 85,
+            "startLearningYear": 2001
+        }
+    ],
+    "cv-hobbies": [
+        {
+            "id": 1,
+            "name": "💻 Informatique (Développement)"
+        },
+        {
+            "id": 2,
+            "name": "📶 High-Tech"
+        },
+        {
+            "id": 3,
+            "name": "✈️ Voyages"
+        }
+    ],
+    "cv-education": [
+        {
+            "id": 1,
+            "title": "Gestion comptable et financier",
+            "certification": "C.E.S.S + Gestion",
+            "schoolName": "Institut Paul Henri Spaak",
+            "finishedYear": 2021
+        },
+        {
+            "id": 2,
+            "title": "Développement (Java, web, php, ...)",
+            "certification": "Bachelor",
+            "schoolName": "Haute Ecole Bruxelles Brabant (ESI)",
+            "finishedYear": "2023 (non terminée)"
+        },
+        {
+            "id": 3,
+            "title": "Développeur Full-Stack",
+            "certification": "Certification professionnelle",
+            "schoolName": "MolenGeek",
+            "finishedYear": 2024
+        }
+    ],
+    "cv-experience": [
+        {
+            "id": 1,
+            "title": "Informaticien",
+            "company": "Hôpital Erasme",
+            "location": "Bruxelles",
+            "duration": "2022",
+            "jobType": "Job étudiant",
+            "description": "Interventions sur des dysfonctionnements matériels et logiciels sur les différents appareils informatiques."
+        },
+        {
+            "id": 2,
+            "title": "Informaticien",
+            "company": "Hôpital Bordet",
+            "location": "Bruxelles",
+            "duration": "2023",
+            "jobType": "Job étudiant",
+            "description": "Configurations d'ordinateurs en utilisant des logiciels de configuration et de maintenance."
+        },
+        {
+            "id": 3,
+            "title": "Livreur",
+            "company": "Limo Trends",
+            "location": "Gembloux",
+            "duration": "2023-2024",
+            "jobType": "CDD",
+            "description": "Livraison de colis à domicile."
+        },
+        {
+            "id": 4,
+            "title": "Préparateur de commandes",
+            "company": "Colruyt",
+            "location": "Halle",
+            "duration": "2019-2023",
+            "jobType": "Job étudiant",
+            "description": "Chargement des marchandises dans les véhicules de transport pour les livraisons en respectant les délais impartis et les objectifs fixés."
+        },
+        {
+            "id": 5,
+            "title": "Chauffeur - Livreur",
+            "company": "DynaLogic",
+            "location": "Boom",
+            "duration": "2018-2019",
+            "jobType": "Job étudiant",
+            "description": "Acheminement de colis fragiles à domicile."
+        }
+    ],
+    "cv-certifications": [
+        {
+            "id": 1,
+            "name": "Permis de conduire B"
+        },
+        {
+            "id": 2,
+            "name": "Diplôme de secouriste"
         }
     ]
 }
