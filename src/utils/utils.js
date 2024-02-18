@@ -1,11 +1,8 @@
-import { FaJava } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
 import { BsFiletypeSql } from "react-icons/bs";
-import { FaPython } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
+import { FaCode, FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaJava, FaPython, FaReact } from "react-icons/fa";
+import { ImAirplane } from "react-icons/im";
+import { GiTechnoHeart } from "react-icons/gi";
+import { IoLogoJavascript } from "react-icons/io5";
 import { SiGnubash } from "react-icons/si";
 
 export function getAge(dateOfBirth) {
@@ -45,6 +42,14 @@ export function getIcon(x) {
             return <FaGitAlt />;
         case "bash":
             return <SiGnubash />;
+        case "github":
+            return <FaGithub />;
+        case "développement" || "code":
+            return <FaCode />;
+        case "high-tech":
+            return <GiTechnoHeart />;
+        case "voyages":
+            return <ImAirplane />;
 
         default:
             return null;

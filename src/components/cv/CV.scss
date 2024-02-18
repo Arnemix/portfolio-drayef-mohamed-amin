@@ -6,6 +6,25 @@
         padding-top: 40px;
         background-color: rgb(218, 238, 233);
         width: 40%;
+        border-radius: 20px;
+    }
+    img {
+        width: 35%;
+        transition: all 0.5s;
+        border: 5px solid rgb(76, 134, 97);
+        border-radius: 20px;
+        animation: floating 3s ease-in-out infinite;
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.5s;
+        }
+    }
+}
+.cv-name {
+    h1 {
+        text-transform: uppercase;
+        color: rgb(76, 134, 97);
+        font-size: 40px;
     }
 }
 
@@ -21,4 +40,25 @@
 .cv-main {
     width: 60%;
     padding: 40px;
+}
+
+.cv-experience-item,
+.cv-education-item,
+.cv-hobby-item,
+.cv-language-item,
+.cv-coordinates-container,
+.cv-skill {
+    padding-left: 40px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, -10px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
 }

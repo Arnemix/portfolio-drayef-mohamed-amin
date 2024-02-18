@@ -3,13 +3,13 @@
         "firstName": "Drayef",
         "lastName": "Mohamed Amin",
         "jobTitle": "Développeur",
-        "location": "Rue Ernest Vander aa 6, 1020 Bruxelles",
+        "location": "Rue Ernest Vander aa 6 - 1020 Bruxelles",
         "land": "Belgique",
         "dateOfBirth": "02/03/2001",
         "phoneNumber": "0493 43 06 82",
         "email": "amindrayef@gmail.com",
         "website": "https://amindrayef.com",
-        "description": "Avec de solides compétences dans les domaines de la logistique et du développement informatique, je suis actuellement à la recherche d'un poste de collaborateur après avoir obtenu mon CESS. Je suis une personne méthodique et organisée, et j'apprécie particulièrement le travail en équipe. Même sous pression et contrainte de temps, je suis capable de maintenir mon efficacité. J'ai également suivi une formation de développeur fullstack chez MolenGeek, ce qui m'a permis d'acquérir une expertise approfondie dans le développement web et mobile, ainsi que dans la création d'applications innovantes."
+        "description": "Développeur fullstack basé à Bruxelles, je suis là pour apporter ma contribution à des projets informatiques passionnants. Passionné par la technologie et doté d'une solide formation, je m'efforce de rester à la pointe des dernières avancées dans le domaine du développement web et mobile. Mon parcours professionnel diversifié m'a permis d'acquérir une expérience pratique précieuse, notamment dans la résolution de problèmes complexes et la collaboration efficace au sein d'équipes multidisciplinaires. Animé par le désir d'apprendre et de relever de nouveaux défis, je suis toujours prêt à saisir les opportunités qui se présentent pour développer mes compétences et contribuer au succès des projets auxquels je participe."
     },
     "cv-skill": [
         {
@@ -94,7 +94,7 @@
         {
             "id": 2,
             "name": "Anglais",
-            "level": 60,
+            "level": 50,
             "startLearningYear": 2018
         },
         {
@@ -113,15 +113,15 @@
     "cv-hobbies": [
         {
             "id": 1,
-            "name": "💻 Informatique (Développement)"
+            "name": "Développement"
         },
         {
             "id": 2,
-            "name": "📶 High-Tech"
+            "name": "High-Tech"
         },
         {
             "id": 3,
-            "name": "✈️ Voyages"
+            "name": "Voyages"
         }
     ],
     "cv-education": [

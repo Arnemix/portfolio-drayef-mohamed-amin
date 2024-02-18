@@ -5,7 +5,6 @@ import CV from "./components/cv/CV";
 const AppLayout = () => {
     return (
         <div>
-            {/* //Ajouter un layout ici (navbar etc.) */}
             <Outlet />
         </div>
     );
@@ -21,9 +20,6 @@ const router = createBrowserRouter([
         ),
         children: [
             {
-                // Code d'exemple
-                // path: '/',
-                // element: <div>Home</div>,
                 path: "/cv",
                 element: <CV />,
             },

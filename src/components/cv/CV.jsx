@@ -1,12 +1,12 @@
 import React from "react";
-import "./CV.scss";
-import data from "../../data/cv/cv-data.json";
-import { IoLocation } from "react-icons/io5";
+import { FaBirthdayCake, FaExternalLinkAlt } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
+import { IoCalendarClear, IoLocation } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-import { FaBirthdayCake } from "react-icons/fa";
+import data from "../../data/cv/cv-data.json";
 import { getAge, getIcon } from "../../utils/utils";
-import { IoCalendarClear } from "react-icons/io5";
+import "./CV.scss";
+
 import CVPicture from "../../assets/cv-picture.png";
 function CV(props) {
     return (
@@ -15,23 +15,42 @@ function CV(props) {
                 <div className="cv-picture">
                     <img src={CVPicture} alt="profil" />
                 </div>
+                <div className="cv-name">
+                    <h2>Poste : {data["cv-personnal-info"]["jobTitle"]}</h2>
+                    <h1>
+                        {data["cv-personnal-info"]["firstName"]} {data["cv-personnal-info"]["lastName"]}
+                    </h1>
+                </div>
                 <div className="cv-coordinates">
                     <h2>COORDONNÉES</h2>
-                    <p>
-                        <IoLocation /> {data["cv-personnal-info"]["location"]}
-                    </p>
-                    <p>
-                        <IoIosCall /> {data["cv-personnal-info"]["phoneNumber"]}
-                    </p>
-                    <p>
-                        <MdEmail /> {data["cv-personnal-info"]["email"]}
-                    </p>
-                    <p>
-                        <FaBirthdayCake /> {data["cv-personnal-info"]["dateOfBirth"]} ({getAge("2001-03-02")} ans)
-                    </p>
-                    <p>
-                        <IoCalendarClear /> disponible maintenant
-                    </p>
+                    <div className="cv-coordinates-container">
+                        <p>
+                            <IoLocation /> {data["cv-personnal-info"]["location"]}
+                        </p>
+                        <p>
+                            <IoIosCall /> {data["cv-personnal-info"]["phoneNumber"]}
+                        </p>
+                        <p>
+                            <MdEmail /> {data["cv-personnal-info"]["email"]}{" "}
+                            <a target="_blank" rel="noopener noreferrer" style={{ color: "black" }} href={`mailto:${data["cv-personnal-info"]["email"]}`}>
+                                <FaExternalLinkAlt />
+                            </a>
+                        </p>
+
+                        <p>
+                            <FaBirthdayCake /> {data["cv-personnal-info"]["dateOfBirth"]} ({getAge("2001-03-02")} ans)
+                        </p>
+                        <p>
+                            <IoCalendarClear /> disponible maintenant
+                        </p>
+                        <p>
+                            {getIcon("github")} Github
+                            <a target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "black" }} href="https://www.github.com/Arnemix">
+                                {" "}
+                                <FaExternalLinkAlt />
+                            </a>
+                        </p>
+                    </div>
                 </div>
                 <div className="cv-skills">
                     <h2>Compétences</h2>
@@ -42,6 +61,7 @@ function CV(props) {
                                     <p>
                                         {getIcon(skill["name"])} {skill["name"]}
                                     </p>
+                                    <p>Frameworks : {skill["learnedFrameworks"].length > 0 ? skill["learnedFrameworks"].join(", ") : "/"}</p>
                                     <div className="progress-container">
                                         <div className="progress" style={{ width: `${skill["level"]}%` }}></div>
                                     </div>
@@ -70,7 +90,9 @@ function CV(props) {
                             {data["cv-hobbies"].map((hobby) => {
                                 return (
                                     <div key={hobby["id"]} className="cv-hobby-item">
-                                        <p>{hobby["name"]}</p>
+                                        <p>
+                                            {getIcon(hobby["name"])} {hobby["name"]}
+                                        </p>
                                     </div>
                                 );
                             })}
@@ -89,10 +111,10 @@ function CV(props) {
                         return (
                             <div key={education["id"]} className="cv-education-item">
                                 <p>
-                                    <b>{education["certification"]}</b> : {education["title"]}
+                                    <b>{education["schoolName"]}</b> - Bruxelles
                                 </p>
                                 <p>
-                                    <b>{education["schoolName"]}</b> - Bruxelles
+                                    <b>{education["certification"]}</b> : {education["title"]}
                                 </p>
                                 <hr />
                             </div>
@@ -106,9 +128,9 @@ function CV(props) {
                             <div key={experience["id"]} className="cv-experience-item">
                                 <p>
                                     <b>{experience["title"]}</b> - {experience["jobType"]} - {experience["duration"]}
-                                </p>
-                                <p>
-                                    <span>{experience["company"]} - </span> {experience["location"]}
+                                    <p>
+                                        <span>{experience["company"]} - </span> {experience["location"]}
+                                    </p>
                                 </p>
                                 <ul>
                                     <li>{experience["description"]}</li>
