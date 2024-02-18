@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaBirthdayCake, FaExternalLinkAlt } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
 import { IoCalendarClear, IoLocation } from "react-icons/io5";
@@ -8,7 +8,10 @@ import { getAge, getIcon } from "../../utils/utils";
 import "./CV.scss";
 
 import CVPicture from "../../assets/cv-picture.png";
-function CV(props) {
+function CV() {
+    useEffect(() => {
+        document.title = "CV - " + data["cv-personnal-info"]["firstName"] + " " + data["cv-personnal-info"]["lastName"];
+    }, []);
     return (
         <div className="cv-container">
             <div className="cv-sidebar">
@@ -25,7 +28,7 @@ function CV(props) {
                     <h2>COORDONNÉES</h2>
                     <div className="cv-coordinates-container">
                         <p>
-                            <IoLocation /> {data["cv-personnal-info"]["location"]}
+                            <IoLocation /> {data["cv-personnal-info"]["location"]} {data["cv-personnal-info"]["land"]}
                         </p>
                         <p>
                             <IoIosCall /> {data["cv-personnal-info"]["phoneNumber"]}
@@ -41,7 +44,7 @@ function CV(props) {
                             <FaBirthdayCake /> {data["cv-personnal-info"]["dateOfBirth"]} ({getAge("2001-03-02")} ans)
                         </p>
                         <p>
-                            <IoCalendarClear /> disponible maintenant
+                            <IoCalendarClear /> disponible
                         </p>
                         <p>
                             {getIcon("github")} Github

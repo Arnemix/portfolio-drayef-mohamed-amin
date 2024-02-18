@@ -2,7 +2,7 @@
     "cv-personnal-info": {
         "firstName": "Drayef",
         "lastName": "Mohamed Amin",
-        "jobTitle": "Développeur",
+        "jobTitle": "Développeur Junior",
         "location": "Rue Ernest Vander aa 6 - 1020 Bruxelles",
         "land": "Belgique",
         "dateOfBirth": "02/03/2001",
@@ -18,7 +18,7 @@
             "level": 75,
             "startLearningYear": 2017,
             "learnedFrameworks": [
-                "Spring"
+                "JavaFX"
             ]
         },
         {
@@ -27,6 +27,7 @@
             "level": 60,
             "startLearningYear": 2020,
             "learnedFrameworks": [
+                "TypeScript",
                 "React",
                 "Angular"
             ]

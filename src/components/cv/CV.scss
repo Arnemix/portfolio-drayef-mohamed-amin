@@ -4,26 +4,28 @@
     .cv-sidebar {
         padding-left: 40px;
         padding-top: 40px;
+        padding-bottom: 40px;
         background-color: rgb(218, 238, 233);
         width: 40%;
         border-radius: 20px;
     }
-    img {
-        width: 35%;
-        transition: all 0.5s;
-        border: 5px solid rgb(76, 134, 97);
-        border-radius: 20px;
-        animation: floating 3s ease-in-out infinite;
-        &:hover {
-            transform: scale(1.05);
+    .cv-picture {
+        img {
+            &:hover {
+                scale: 1.02;
+            }
+            width: 40%;
             transition: all 0.5s;
+            border: 5px solid #04aa6d;
+            border-radius: 25px;
+            animation: floating 3s ease-in-out infinite;
         }
     }
 }
 .cv-name {
     h1 {
         text-transform: uppercase;
-        color: rgb(76, 134, 97);
+        color: #04aa6d;
         font-size: 40px;
     }
 }
@@ -60,5 +62,25 @@
     }
     100% {
         transform: translate(0, 0px);
+    }
+}
+
+@media (max-width: 700px) {
+    .cv-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+        h1 {
+            font-size: 25px;
+        }
+        .cv-sidebar {
+            padding-left: 2%;
+            width: 90vw;
+        }
+        .cv-main {
+            padding-left: 2%;
+            width: 90vw;
+        }
     }
 }
