@@ -143,7 +143,9 @@ function CV() {
                                     </p>
                                 </p>
                                 <ul>
-                                    <li>{experience["description"]}</li>
+                                    {experience["tasks"].map((task) => {
+                                        return <li style={{ paddingTop: "5px", paddingBottom: "5px" }} key={task}>{task}</li>;
+                                    })}
                                 </ul>
                                 <hr />
                             </div>

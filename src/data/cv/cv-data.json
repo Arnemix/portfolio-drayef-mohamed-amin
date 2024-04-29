@@ -45,7 +45,9 @@
             "name": "HTML",
             "level": 95,
             "startLearningYear": 2018,
-            "learnedFrameworks": ["HTML5"]
+            "learnedFrameworks": [
+                "HTML5"
+            ]
         },
         {
             "id": 5,
@@ -84,7 +86,10 @@
             "name": "Bash",
             "level": 40,
             "startLearningYear": 2018,
-            "learnedFrameworks": ["Shell", "Scripts"]
+            "learnedFrameworks": [
+                "Shell",
+                "Scripts"
+            ]
         }
     ],
     "cv-language": [
@@ -153,21 +158,29 @@
     "cv-experience": [
         {
             "id": 1,
-            "title": "Informaticien",
+            "title": "Support Informatique (Helpdesk)",
             "company": "Hôpital Erasme",
             "location": "Bruxelles",
             "duration": "2022",
             "jobType": "Job étudiant",
-            "description": "Interventions sur des dysfonctionnements matériels et logiciels sur les différents appareils informatiques."
+            "tasks": [
+                "Interventions sur des dysfonctionnements matériels et logiciels sur les différents appareils informatiques.",
+                "Analyse et optimisation des besoins des clients.",
+                "Assistance aux utilisateurs pour la résolution des problèmes techniques."
+            ]
         },
         {
             "id": 2,
-            "title": "Informaticien",
+            "title": "Support Informatique (Helpdesk)",
             "company": "Hôpital Bordet",
             "location": "Bruxelles",
             "duration": "2023",
             "jobType": "Job étudiant",
-            "description": "Configurations d'ordinateurs en utilisant des logiciels de configuration et de maintenance."
+            "tasks": [
+                "Configurations d'ordinateurs en utilisant des logiciels de configuration et de maintenance.",
+                "Maintenance préventive des équipements informatiques.",
+                "Support technique pour les systèmes informatiques et les logiciels."
+            ]
         },
         {
             "id": 3,
@@ -176,7 +189,11 @@
             "location": "Gembloux",
             "duration": "2023-2024",
             "jobType": "CDD",
-            "description": "Livraison de colis à domicile."
+            "tasks": [
+                "Livraison de colis à domicile.",
+                "Vérification de l'intégrité des colis avant la livraison.",
+                "Interaction avec les clients pour assurer la satisfaction et résoudre les problèmes de livraison."
+            ]
         },
         {
             "id": 4,
@@ -185,7 +202,11 @@
             "location": "Halle",
             "duration": "2019-2023",
             "jobType": "Job étudiant",
-            "description": "Chargement des marchandises dans les véhicules de transport pour les livraisons en respectant les délais impartis et les objectifs fixés."
+            "tasks": [
+                "Chargement des marchandises dans les véhicules de transport pour les livraisons en respectant les délais impartis et les objectifs fixés.",
+                "Préparation des commandes en suivant les instructions de collecte.",
+                "Contrôle de la qualité des produits avant l'expédition."
+            ]
         },
         {
             "id": 5,
@@ -194,7 +215,11 @@
             "location": "Boom",
             "duration": "2018-2019",
             "jobType": "Job étudiant",
-            "description": "Acheminement de colis fragiles à domicile."
+            "tasks": [
+                "Acheminement de colis fragiles à domicile.",
+                "Gestion des itinéraires pour optimiser les délais de livraison.",
+                "Traitement des retours et gestion des plaintes des clients."
+            ]
         }
     ],
     "cv-certifications": [
