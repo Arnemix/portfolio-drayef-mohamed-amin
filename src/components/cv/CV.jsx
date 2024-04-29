@@ -7,7 +7,7 @@ import data from "../../data/cv/cv-data.json";
 import { getAge, getIcon } from "../../utils/utils";
 import "./CV.scss";
 
-import CVPicture from "../../assets/cv-picture.png";
+import CVPicture from "../../assets/picture.png";
 function CV() {
     useEffect(() => {
         document.title = "CV - " + data["cv-personnal-info"]["firstName"] + " " + data["cv-personnal-info"]["lastName"];
@@ -62,9 +62,13 @@ function CV() {
                             return (
                                 <div key={skill["id"]} className="cv-skill">
                                     <p>
-                                        {getIcon(skill["name"])} {skill["name"]}
+                                        <b>
+                                            {getIcon(skill["name"])} {skill["name"]}
+                                        </b>
                                     </p>
-                                    <p>Frameworks : {skill["learnedFrameworks"].length > 0 ? skill["learnedFrameworks"].join(", ") : "/"}</p>
+                                    <p>
+                                        <i>Compétences :</i> {skill["learnedFrameworks"].length > 0 ? skill["learnedFrameworks"].join(", ") : "/"}
+                                    </p>
                                     <div className="progress-container">
                                         <div className="progress" style={{ width: `${skill["level"]}%` }}></div>
                                     </div>
@@ -114,7 +118,7 @@ function CV() {
                         return (
                             <div key={education["id"]} className="cv-education-item">
                                 <p>
-                                    <b>{education["schoolName"]}</b> - Bruxelles
+                                    <b>{education["schoolName"]}</b> - Bruxelles - {education["finishedYear"]}
                                 </p>
                                 <p>
                                     <b>{education["certification"]}</b> : {education["title"]}

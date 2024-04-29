@@ -27,9 +27,8 @@
             "level": 60,
             "startLearningYear": 2020,
             "learnedFrameworks": [
-                "TypeScript",
-                "React",
-                "Angular"
+                "NextJS",
+                "React"
             ]
         },
         {
@@ -37,14 +36,16 @@
             "name": "Python",
             "level": 20,
             "startLearningYear": 2021,
-            "learnedFrameworks": []
+            "learnedFrameworks": [
+                "Django"
+            ]
         },
         {
             "id": 4,
             "name": "HTML",
             "level": 95,
             "startLearningYear": 2018,
-            "learnedFrameworks": []
+            "learnedFrameworks": ["HTML5"]
         },
         {
             "id": 5,
@@ -53,7 +54,8 @@
             "startLearningYear": 2018,
             "learnedFrameworks": [
                 "Bootstrap",
-                "Sass"
+                "Sass",
+                "TailWindCSS"
             ]
         },
         {
@@ -82,7 +84,7 @@
             "name": "Bash",
             "level": 40,
             "startLearningYear": 2018,
-            "learnedFrameworks": []
+            "learnedFrameworks": ["Shell", "Scripts"]
         }
     ],
     "cv-language": [
@@ -95,13 +97,13 @@
         {
             "id": 2,
             "name": "Anglais",
-            "level": 60,
+            "level": 30,
             "startLearningYear": 2018
         },
         {
             "id": 3,
             "name": "Néerlandais",
-            "level": 40,
+            "level": 20,
             "startLearningYear": 2018
         },
         {
@@ -127,11 +129,11 @@
     ],
     "cv-education": [
         {
-            "id": 1,
-            "title": "Gestion comptable et financier",
-            "certification": "C.E.S.S + Gestion",
-            "schoolName": "Institut Paul Henri Spaak",
-            "finishedYear": 2021
+            "id": 3,
+            "title": "Développeur Full-Stack",
+            "certification": "Certification professionnelle",
+            "schoolName": "MolenGeek",
+            "finishedYear": 2024
         },
         {
             "id": 2,
@@ -141,11 +143,11 @@
             "finishedYear": "2023 (non terminée)"
         },
         {
-            "id": 3,
-            "title": "Développeur Full-Stack",
-            "certification": "Certification professionnelle",
-            "schoolName": "MolenGeek",
-            "finishedYear": 2024
+            "id": 1,
+            "title": "Gestion comptable et financier",
+            "certification": "C.E.S.S + Gestion",
+            "schoolName": "Institut Paul Henri Spaak",
+            "finishedYear": 2021
         }
     ],
     "cv-experience": [
