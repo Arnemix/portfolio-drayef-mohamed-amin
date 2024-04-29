@@ -111,6 +111,9 @@ function CV() {
                 <div className="cv-description">
                     <h2>Description</h2>
                     <p>{data["cv-personnal-info"]["description"]}</p>
+                    <a href="https://github.com/Arnemix/portfolio-drayef-mohamed-amin">
+                        <i>Code source du CV</i>
+                    </a>
                 </div>
                 <div className="cv-education">
                     <h2>Parcours scolaire</h2>
